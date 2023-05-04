@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/06fb1deb19.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/images/logo/logo.png" alt="logo"
+          /></a>
+        </div>
+
+        <ul>
+          <li class="nav-list">
+            <div>
+              <h2>My Project</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="my-project-btn"
+              /></label>
+            </div>
+          </li>
+          <li class="nav-list">
+            <div>
+              <h2>About Me</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="about-me-btn"
+              /></label>
+            </div>
+          </li>
+          <li class="nav-list">
+            <div>
+              <h2>Contact</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="contact-btn"
+              /></label>
+            </div>
+          </li>
+        </ul>
+        <button class="burger-menu">
+          <div class="bar"></div>
+        </button>
+      </nav>
+      <nav class="mobile-nav">
+        <ul>
+          <li class="mobile-nav-list">
+            <div>
+              <h2>My Project</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="my-project-btn1"
+              /></label>
+            </div>
+          </li>
+          <li class="mobile-nav-list">
+            <div>
+              <h2>About Me</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="about-me-btn1"
+              /></label>
+            </div>
+          </li>
+          <li class="mobile-nav-list">
+            <div>
+              <h2>Contact</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="btn"
+                  class="nav-btn"
+                  id="contact-btn1"
+              /></label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about-page-container">
+      <div class="content-container">
+        <div class="text-container hidden">
+          <div class="cube">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <h4 class="my-skills1">MY SKILLS</h4>
+            <h4 class="my-skills2">MY SKILLS</h4>
+            <h4 class="my-skills3">MY SKILLS</h4>
+            <h4 class="my-skills4">MY SKILLS</h4>
+            <div>
+              <span style="--i: 0" class="wall1"><h3>HTML</h3></span>
+              <span style="--i: 1" class="wall2"><h3>CSS</h3></span>
+              <span style="--i: 2" class="wall3"><h3>SCSS</h3></span>
+              <span style="--i: 3" class="wall4"
+                ><h3>
+                  JavaScript <br />
+                  REACT
+                </h3></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script defer src="/script/slide-in-fucntion.js"></script>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
