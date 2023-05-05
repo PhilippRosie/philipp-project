@@ -1,9 +1,10 @@
 .landingpage-container {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: radial-gradient(#c70098, black);
 }
 
 .canvas1 {
@@ -12,24 +13,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(#c70098, black);
 }
 
 .btn-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .welcome-btn a {
-  position: absolute;
-  top: 45%;
-  left: 38%;
-  display: inline-block;
-  padding: 2rem 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
+  padding: 2rem 7rem;
+  position: relative;
   border-radius: 20px;
   font-size: 28px;
   letter-spacing: 12px;
