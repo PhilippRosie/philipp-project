@@ -58,7 +58,6 @@
   }
 
   .message-box {
-    width: 80%;
     margin-top: 10%;
     font-size: 28px;
     font-family: "Barlow Condensed", sans-serif;
@@ -68,6 +67,7 @@
     text-shadow: 0 0 3px #da01a9;
 
     .message-field {
+      width: 80%;
       border-radius: 5px;
       font-family: "Barlow Condensed", sans-serif;
       text-transform: uppercase;
