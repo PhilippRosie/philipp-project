@@ -106,3 +106,89 @@
   box-shadow: 8px 0px 0 #da01a9, 8px 0px 0 #da01a9;
   transition-delay: 0s, 0.5s, 1s, 1s;
 }
+
+@media screen and (max-width: 500px) {
+  .welcome-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 2rem 3rem;
+    position: relative;
+    border-radius: 20px;
+    font-size: 22px;
+    letter-spacing: 12px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0s ease;
+    transition-delay: 0s;
+
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+  .welcome-btn a:hover {
+    color: black;
+    background-color: #da01a9;
+    box-shadow: 0 0 10px #da01a9, 0 0 20px rgb(218, 1, 169), 0 0 40px #da01a9,
+      0 0 80px #da01a9, 0 0 160px #da01a9;
+    transition-delay: 1.5s;
+  }
+
+  .welcome-btn a h2 {
+    position: relative;
+    z-index: 100;
+  }
+
+  .welcome-btn a::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 4px;
+    background: #da01a9;
+    border-radius: 10px;
+    box-shadow: 16px -25px 0 #da01a9, 16px 25px 0 #da01a9;
+
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+
+  .welcome-btn a:hover::before {
+    width: 70%;
+    height: 100%;
+    left: 6px;
+    box-shadow: -8px 0px 0 #da01a9, -8px 0px 0 #da01a9;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+  }
+
+  .welcome-btn a::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 4px;
+    background: #da01a9;
+    border-radius: 10px;
+    box-shadow: -16px -25px 0 #da01a9, -16px 25px 0 #da01a9;
+
+    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+
+  .welcome-btn a:hover:after {
+    width: 70%;
+    height: 100%;
+    right: 6px;
+    box-shadow: 8px 0px 0 #da01a9, 8px 0px 0 #da01a9;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+  }
+}
