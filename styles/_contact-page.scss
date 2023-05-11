@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: radial-gradient(black, black, #c70098);
 }
 
 .content-container-contactpage {
@@ -11,7 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .form-container {
@@ -20,147 +21,295 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.form {
-  width: 500px;
-  min-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-radius: 3px;
-  background-color: #da01a744;
-  box-shadow: 0 0 5px #da01a9, 0 0 15px white;
-
-  .label {
-    font-size: 28px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0 0 3px #da01a9;
-  }
-
-  .input {
-    width: 80%;
-    height: 50px;
-    border-radius: 5px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-transform: uppercase;
-  }
-
-  .input:hover {
-    background: rgb(223, 223, 223);
-    transition: 1s ease;
-  }
-
-  .message-box {
-    margin-top: 10%;
-    font-size: 28px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    text-shadow: 0 0 3px #da01a9;
-  }
-
-  .message-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-
-    .message-field {
-      border-radius: 5px;
-      font-size: 18px;
-      font-family: "Barlow Condensed", sans-serif;
-      text-transform: uppercase;
-    }
-  }
-
-  .message-field:hover {
-    background: rgb(223, 223, 223);
-    transition: 1s ease;
-  }
-
-  .send-btn {
-    width: 80%;
-    height: 50px;
-    margin-top: 10%;
-    background: #da01a9;
-    box-shadow: 0 0 5px #da01a9, 0 0 10px rgb(0, 0, 0);
-
-    border: none;
-    border-radius: 5px;
-
-    h2 {
-      font-size: 28px;
-      font-family: "Barlow Condensed", sans-serif;
-      text-transform: uppercase;
-      color: white;
-      text-shadow: 0 0 3px #8a006a;
-    }
-  }
-
-  .send-btn:hover {
-    background-color: #a2007c;
-    transition: 1s ease-in-out;
-    background: #b30089#da01a9;
-    box-shadow: 0 0 5px #000000, 0 0 10px #b30089, inset 0 0 15px #000000,
-      inset 0 0 10px #b30089, inset 0 0 15px #da01a9;
-  }
-
-  .socialmedia-container {
-    width: 70%;
-    height: 90px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .fa-github {
-    font-size: 28px;
-    color: white;
-    text-shadow: 0 0 5px #000000;
-    padding: 10px;
-  }
-
-  .fa-github:hover {
-    color: #da01a9;
-    text-shadow: 0 0 5px #000000;
-    transition: 1s ease;
-  }
-
-  .fa-facebook {
-    font-size: 28px;
-    color: white;
-    text-shadow: 0 0 5px #000000;
-    padding: 10px;
-  }
-
-  .fa-facebook:hover {
-    color: #da01a9;
-    text-shadow: 0 0 5px #000000;
-    transition: 1s ease;
-  }
-
-  .fa-linkedin-in {
-    font-size: 28px;
-    color: white;
-    text-shadow: 0 0 5px #000000;
-    padding: 10px;
-  }
-
-  .fa-linkedin-in:hover {
-    color: #da01a9;
-    text-shadow: 0 0 5px #000000;
-    transition: 1s ease;
-  }
 }
 
-.form:hover {
-  box-shadow: 0 0 10px #000000, 0 0 15px #8a006a, 0 0 20px #b30089,
-    0 0 40px #da01a9;
-  transition: 1s ease;
+// .form {
+//   width: 500px;
+//   min-height: 700px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   border-radius: 3px;
+//   background-color: #da01a744;
+//   box-shadow: 0 0 5px #da01a9, 0 0 15px white;
+
+//   .label {
+//     font-size: 28px;
+//     font-family: "Barlow Condensed", sans-serif;
+//     text-transform: uppercase;
+//     color: white;
+//     text-shadow: 0 0 3px #da01a9;
+//   }
+
+//   .input {
+//     width: 80%;
+//     height: 50px;
+//     border-radius: 5px;
+//     font-family: "Barlow Condensed", sans-serif;
+//     text-transform: uppercase;
+//   }
+
+//   .input:hover {
+//     background: rgb(223, 223, 223);
+//     transition: 1s ease;
+//   }
+
+//   .message-box {
+//     margin-top: 10%;
+//     font-size: 28px;
+//     font-family: "Barlow Condensed", sans-serif;
+//     text-transform: uppercase;
+//     color: white;
+//     text-align: center;
+//     text-shadow: 0 0 3px #da01a9;
+//   }
+
+//   .message-text {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 80%;
+
+//     .message-field {
+//       border-radius: 5px;
+//       font-size: 18px;
+//       font-family: "Barlow Condensed", sans-serif;
+//       text-transform: uppercase;
+//     }
+//   }
+
+//   .message-field:hover {
+//     background: rgb(223, 223, 223);
+//     transition: 1s ease;
+//   }
+
+//   .send-btn {
+//     width: 80%;
+//     height: 50px;
+//     margin-top: 10%;
+//     background: #da01a9;
+//     box-shadow: 0 0 5px #da01a9, 0 0 10px rgb(0, 0, 0);
+
+//     border: none;
+//     border-radius: 5px;
+
+//     h2 {
+//       font-size: 28px;
+//       font-family: "Barlow Condensed", sans-serif;
+//       text-transform: uppercase;
+//       color: white;
+//       text-shadow: 0 0 3px #8a006a;
+//     }
+//   }
+
+//   .send-btn:hover {
+//     background-color: #a2007c;
+//     transition: 1s ease-in-out;
+//     background: #b30089#da01a9;
+//     box-shadow: 0 0 5px #000000, 0 0 10px #b30089, inset 0 0 15px #000000,
+//       inset 0 0 10px #b30089, inset 0 0 15px #da01a9;
+//   }
+
+//   .socialmedia-container {
+//     width: 70%;
+//     height: 90px;
+
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//   }
+
+//   .fa-github {
+//     font-size: 28px;
+//     color: white;
+//     text-shadow: 0 0 5px #000000;
+//     padding: 10px;
+//   }
+
+//   .fa-github:hover {
+//     color: #da01a9;
+//     text-shadow: 0 0 5px #000000;
+//     transition: 1s ease;
+//   }
+
+//   .fa-facebook {
+//     font-size: 28px;
+//     color: white;
+//     text-shadow: 0 0 5px #000000;
+//     padding: 10px;
+//   }
+
+//   .fa-facebook:hover {
+//     color: #da01a9;
+//     text-shadow: 0 0 5px #000000;
+//     transition: 1s ease;
+//   }
+
+//   .fa-linkedin-in {
+//     font-size: 28px;
+//     color: white;
+//     text-shadow: 0 0 5px #000000;
+//     padding: 10px;
+//   }
+
+//   .fa-linkedin-in:hover {
+//     color: #da01a9;
+//     text-shadow: 0 0 5px #000000;
+//     transition: 1s ease;
+//   }
+// }
+
+// .form:hover {
+//   box-shadow: 0 0 10px #000000, 0 0 15px #8a006a, 0 0 20px #b30089,
+//     0 0 40px #da01a9;
+//   transition: 1s ease;
+// }
+
+.contactHeading {
+  color: #ffffff;
+  font-size: 34px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #6d6d6d;
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 10px #e600bc, 0 0 12px black,
+    inset 0 0 3px white, inset 0 0 10px #e600bc;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #cd00a8;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: black;
+  border-left: 2px solid #cd00a8;
+  border-right: 2px solid #cd00a8;
+  letter-spacing: 2px;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span {
+  background-color: #cd00a8;
+  box-shadow: 0 0 5px #cd00a8;
+  color: #333333;
+  border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 2px solid #cd00a8;
+}
+
+.messageBox {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+}
+
+.messageBox textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #6d6d6d;
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 10px #e600bc, 0 0 12px black,
+    inset 0 0 3px white, inset 0 0 10px #e600bc;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.messageBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.messageBox textarea:valid ~ span,
+.messageBox textarea:focus ~ span {
+  color: #cd00a8;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: black;
+  border-left: 2px solid #cd00a8;
+  border-right: 2px solid #cd00a8;
+  letter-spacing: 2px;
+}
+
+.messageBox textarea:valid,
+.messageBox textarea:focus {
+  border: 2px solid #cd00a8;
+}
+
+.submitBtn {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+}
+
+button {
+  width: 100%;
+  min-height: 45px;
+  padding: 10px;
+  border: 2px solid #6d6d6d;
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: #6d6d6d;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 10px #e600bc, 0 0 12px black,
+    inset 0 0 3px rgb(0, 0, 0), inset 0 0 10px #e600bc;
+  transition: 0.5s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  transition: 0.5s ease;
+  background-color: #cd00a8;
+  color: white;
+  text-shadow: 0 0 2px black;
 }
