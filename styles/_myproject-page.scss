@@ -20,6 +20,7 @@ a {
 }
 
 .webshop {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +36,7 @@ a {
     inset 0 0 20px #3e3e3e;
 
   h2 {
+    position: absolute;
     transition: 0.5s ease;
     color: #222222a1;
     letter-spacing: 3px;
@@ -54,9 +56,9 @@ a {
 }
 
 .fa-bag-shopping {
-  font-size: 40px;
-  color: #222222bd;
+  font-size: 70px;
+  color: #ff00c3fd;
   text-decoration: none;
-  margin-top: 5px;
   transition: 0.5s ease;
+  text-shadow: 0 0 3px #3e3e3e;
 }
