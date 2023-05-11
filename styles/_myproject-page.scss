@@ -20,6 +20,7 @@ a {
 }
 
 .webshop {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,12 +30,13 @@ a {
   flex-direction: column;
   background-color: #ad0085;
   border-radius: 10px;
-  border: 5px solid #222222c5;
+  border: 5px solid #ff00c3fd;
   transition: 0.5s ease;
   box-shadow: 0 0 10px #3e3e3e, 0 0 15px #c70098, 0 0 30px#d700a5,
     inset 0 0 20px #3e3e3e;
 
   h2 {
+    position: absolute;
     transition: 0.5s ease;
     color: #222222a1;
     letter-spacing: 3px;
@@ -54,9 +56,9 @@ a {
 }
 
 .fa-bag-shopping {
-  font-size: 40px;
-  color: #222222bd;
+  font-size: 70px;
+  color: #ff00c3fd;
   text-decoration: none;
-  margin-top: 5px;
   transition: 0.5s ease;
+  text-shadow: 0 0 3px #3e3e3e;
 }
