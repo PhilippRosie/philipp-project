@@ -239,28 +239,32 @@ img {
   }
 
   .cube {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .cube div span {
-    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(45px);
 
     h3 {
+      font-size: 16px;
+    }
+
+    .jsReact {
       font-size: 12px;
     }
   }
 
   .top {
-    width: 100px;
-    height: 100px;
-    transform: rotateX(90deg) translateZ(50px);
+    width: 90px;
+    height: 90px;
+    transform: rotateX(90deg) translateZ(45px);
   }
 
   .bottom {
     width: 100px;
     height: 100px;
-    transform: rotateX(90deg) translateZ(-100px);
+    transform: rotateX(90deg) translateZ(-90px);
   }
 
   .my-skills1 {
@@ -270,7 +274,7 @@ img {
 
   .my-skills2 {
     font-size: 18px;
-    transform: translateZ(-53px) translateY(100px) translateX(-20px) scaleX(-1);
+    transform: translateZ(-53px) translateY(100px) translateX(-25px) scaleX(-1);
   }
 
   .my-skills3 {
@@ -280,7 +284,7 @@ img {
 
   .my-skills4 {
     font-size: 18px;
-    transform: translateY(100px) translateX(-172px) rotateY(90deg) scaleX(-1);
+    transform: translateY(100px) translateX(-182px) rotateY(90deg) scaleX(-1);
   }
 }
 
