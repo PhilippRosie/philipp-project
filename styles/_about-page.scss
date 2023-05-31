@@ -304,7 +304,7 @@ img {
 
   .my-skills4 {
     font-size: 18px;
-    transform: translateY(100px) translateX(-152px) rotateY(90deg) scaleX(-1);
+    transform: translateY(100px) translateX(-172px) rotateY(90deg) scaleX(-1);
   }
 }
 
@@ -331,6 +331,15 @@ img {
     align-items: center;
     width: 100%;
     margin-left: 0%;
+  }
+  .my-skills2 {
+    font-size: 18px;
+    transform: translateZ(-53px) translateY(100px) translateX(-25px) scaleX(-1);
+  }
+
+  .my-skills3 {
+    font-size: 18px;
+    transform: translateY(100px) translateX(-25px) rotateY(90deg);
   }
 }
 
