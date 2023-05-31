@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/_skill-box.scss" />
     <title>About Me</title>
   </head>
   <body>
@@ -111,28 +112,83 @@
       </nav>
     </header>
     <section class="about-page-container">
+      <div class="content-left">
+        <div class="skill-container1">
+          <div class="skill-box">
+            <div class="skill-bar">
+              <span class="skill-per html">
+                <span class="tooltip">93%</span>
+              </span>
+            </div>
+            <span class="title">HTML</span>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-bar">
+              <span class="skill-per css">
+                <span class="tooltip">82%</span>
+              </span>
+            </div>
+            <span class="title">CSS</span>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-bar">
+              <span class="skill-per scss">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+            <span class="title">SCSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-right">
+        <div class="skill-container2">
+          <div class="skill-box">
+            <div class="skill-bar">
+              <span class="skill-per javascript">
+                <span class="tooltip">30%</span>
+              </span>
+            </div>
+            <span class="title">JavaScript</span>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-bar">
+              <span class="skill-per reactjs">
+                <span class="tooltip">69%</span>
+              </span>
+            </div>
+            <span class="title">React.js</span>
+          </div>
+        </div>
+      </div>
+
       <div class="img-holding-cube">
         <img src="/images/about-me-img/holding-cude.png" alt="Holding Cube" />
       </div>
 
-      <div class="text-container hidden">
-        <div class="cube">
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <h4 class="my-skills1">MY SKILLS</h4>
-          <h4 class="my-skills2">MY SKILLS</h4>
-          <h4 class="my-skills3">MY SKILLS</h4>
-          <h4 class="my-skills4">MY SKILLS</h4>
-          <div>
-            <span style="--i: 0" class="wall1"><h3>HTML</h3></span>
-            <span style="--i: 1" class="wall2"><h3>CSS</h3></span>
-            <span style="--i: 2" class="wall3"><h3>SCSS</h3></span>
-            <span style="--i: 3" class="wall4"
-              ><h3 class="jsReact">
-                JavaScript <br />
-                REACT
-              </h3></span
-            >
+      <div class="cube-contatiner">
+        <div class="text-container hidden">
+          <div class="cube">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <h4 class="my-skills1">MY SKILLS</h4>
+            <h4 class="my-skills2">MY SKILLS</h4>
+            <h4 class="my-skills3">MY SKILLS</h4>
+            <h4 class="my-skills4">MY SKILLS</h4>
+            <div>
+              <span style="--i: 0" class="wall1"><h3>HTML</h3></span>
+              <span style="--i: 1" class="wall2"><h3>CSS</h3></span>
+              <span style="--i: 2" class="wall3"><h3>SCSS</h3></span>
+              <span style="--i: 3" class="wall4"
+                ><h3 class="jsReact">
+                  JavaScript <br />
+                  REACT
+                </h3></span
+              >
+            </div>
           </div>
         </div>
       </div>
