@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .content-left {
@@ -171,14 +172,13 @@
 @media screen and (max-width: 500px) {
   .skill-content-container {
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     width: 80%;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
   }
 
   .content-left {
