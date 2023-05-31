@@ -312,14 +312,13 @@ img {
     height: 100%;
     position: relative;
     bottom: 10%;
-    overflow: hidden;
   }
 
   img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -337,7 +336,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 321px) {
