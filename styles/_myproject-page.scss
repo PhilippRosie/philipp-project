@@ -25,9 +25,10 @@
 
 a {
   text-decoration: none;
+  padding: 20px;
 }
 
-.webshop {
+.project1 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -51,6 +52,54 @@ a {
     font-size: 28px;
     font-family: "Barlow Condensed", sans-serif;
   }
+  p {
+    position: absolute;
+    transition: 0.5s ease;
+    color: #222222a1;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    bottom: 5px;
+    padding: 5px;
+  }
+}
+
+.project2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  max-width: 100%;
+  min-height: 200px;
+  flex-direction: column;
+  background-color: #ad0085;
+  border-radius: 10px;
+  border: 5px solid #ff00c3fd;
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px #3e3e3e, 0 0 15px #c70098, 0 0 30px#d700a5,
+    inset 0 0 20px #3e3e3e;
+
+  h2 {
+    position: absolute;
+    transition: 0.5s ease;
+    color: #222222a1;
+    letter-spacing: 3px;
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  p {
+    position: absolute;
+    transition: 0.5s ease;
+    color: #222222a1;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    bottom: 5px;
+    padding: 5px;
+  }
 }
 
 .webshop:hover {
@@ -64,6 +113,14 @@ a {
 }
 
 .fa-store {
+  font-size: 70px;
+  color: #ff00c3fd;
+  text-decoration: none;
+  transition: 0.5s ease;
+  text-shadow: 0 0 3px #3e3e3e;
+}
+
+.fa-comment-dots {
   font-size: 70px;
   color: #ff00c3fd;
   text-decoration: none;
