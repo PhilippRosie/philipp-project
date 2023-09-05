@@ -172,6 +172,15 @@ var VanillaTilt = (function () {
         "mousemove",
         this.onMouseMoveBind
       );
+      this.elementListener.addEventListener(
+        "touchstart",
+        this.onMouseEnterBind
+      );
+      this.elementListener.addEventListener(
+        "touchmove",
+        this.onTouchMove.bind(this)
+      );
+      this.elementListener.addEventListener("touchend", this.onMouseLeaveBind);
 
       if (this.gyroscope) {
         window.removeEventListener(
