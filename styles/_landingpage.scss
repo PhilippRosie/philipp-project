@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(#c70098, black);
+  background: radial-gradient(#550843, black);
 }
 
 .canvas1 {
@@ -36,7 +36,7 @@
   letter-spacing: 12px;
   background-color: rgb(0, 0, 0);
   color: white;
-  box-shadow: 0 0 15px rgb(255, 255, 255);
+  box-shadow: 0 0 10px white, 0 0 15px #cd00a8;
   -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
   transition: 0.5s ease;
   transition-delay: 0s;
