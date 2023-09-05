@@ -113,42 +113,43 @@
       </header>
       <canvas class="canvas1" id="canvas1"></canvas>
       <div class="content-container-contactpage">
-        <div class="form-container">
-          <h1 class="contactHeading">Let's Start Working!</h1>
-          <form
-            action="https://formsubmit.co/philippderosie@gmail.com"
-            method="POST"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <div class="inputBox">
-              <input type="name" name="name" required="required" />
-              <span>First Name</span>
-            </div>
-            <div class="inputBox">
-              <input type="email" name="email" required="required" />
-              <span>Email</span>
-              <input
-                type="hidden"
-                name="_next"
-                value="https://www.rosie.zone/pages/thankyou-page.html"
-              />
-            </div>
-            <div class="messageBox">
-              <textarea
-                type="text"
-                name="message"
-                id=""
-                cols="40"
-                rows="10"
-                required="required"
-              ></textarea>
-              <span>Message</span>
-            </div>
-            <div class="submitBtn">
-              <button type="submit" class="sendMessage">Send Message</button>
-            </div>
-          </form>
-          <!-- 
+        <div class="contact-form-card">
+          <div class="form-container hidden">
+            <h1 class="contactHeading">Let's Start Working!</h1>
+            <form
+              action="https://formsubmit.co/philippderosie@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <div class="inputBox">
+                <input type="name" name="name" required="required" />
+                <span>First Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="email" name="email" required="required" />
+                <span>Email</span>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.rosie.zone/pages/thankyou-page.html"
+                />
+              </div>
+              <div class="messageBox">
+                <textarea
+                  type="text"
+                  name="message"
+                  id=""
+                  cols="40"
+                  rows="10"
+                  required="required"
+                ></textarea>
+                <span>Message</span>
+              </div>
+              <div class="submitBtn">
+                <button type="submit" class="sendMessage">Send Message</button>
+              </div>
+            </form>
+            <!-- 
             <button class="send-btn"><h2>Send Message</h2></button>
             <div class="socialmedia-container">
               <i class="fa-brands fa-github"></i>
@@ -156,10 +157,21 @@
               <i class="fa-brands fa-facebook"></i>
             </div>
          -->
+          </div>
         </div>
       </div>
     </section>
+    <script defer src="/script/slide-in-fucntion-cube.js"></script>
     <script src="/script/paticals.js"></script>
     <script src="/script/script.js"></script>
+    <script type="text/javascript" src="../script/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".contact-form-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>

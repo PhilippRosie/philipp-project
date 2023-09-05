@@ -171,7 +171,7 @@
         <img src="/images/about-me-img/holding-cude.png" alt="Holding Cube" />
       </div>
 
-      <div class="cube-contatiner">
+      <!-- <div class="cube-contatiner">
         <div class="text-container hidden">
           <div class="cube">
             <div class="top"></div>
@@ -193,10 +193,73 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div class="card-container">
+        <div class="skill-card">
+          <div class="skills hidden">
+            <h2 class="skill-title">MY</h2>
+            <h2 class="skill-title1">SKILLS</h2>
+            <span class="skill-img-container">
+              <div>
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/file-type-html.svg"
+                  alt="html-icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/css3.svg"
+                  alt="css.icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/javascript-js.svg"
+                  alt="javascript-icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/file-type-reactjs.svg"
+                  alt="reactjs-icon"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/nextjs (1).svg"
+                  alt="nextjs-icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/sass.svg"
+                  alt="sass-icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/tailwindcss-icon.svg"
+                  alt="tailwindcss-icon"
+                />
+                <img
+                  class="skill-icon"
+                  src="/images/about-me-img/skills-img/typescript-icon.svg"
+                  alt="typescript-icon"
+                />
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
     </section>
 
     <script defer src="/script/slide-in-fucntion-cube.js"></script>
     <script src="/script/script.js"></script>
+    <script type="text/javascript" src="../script/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".skill-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
