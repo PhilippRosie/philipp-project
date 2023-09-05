@@ -114,6 +114,16 @@ var VanillaTilt = (function () {
       this.onDeviceOrientationBind = this.onDeviceOrientation.bind(this);
 
       this.elementListener.addEventListener(
+        "touchstart",
+        this.onMouseEnterBind
+      );
+      this.elementListener.addEventListener(
+        "touchmove",
+        this.onTouchMove.bind(this)
+      );
+      this.elementListener.addEventListener("touchend", this.onMouseLeaveBind);
+
+      this.elementListener.addEventListener(
         "mouseenter",
         this.onMouseEnterBind
       );
@@ -132,6 +142,17 @@ var VanillaTilt = (function () {
           "deviceorientation",
           this.onDeviceOrientationBind
         );
+      }
+    }
+
+    onTouchMove(event) {
+      if (event.touches.length === 1) {
+        // Single touch event
+        const touch = event.touches[0];
+        this.onMouseMove({
+          clientX: touch.clientX,
+          clientY: touch.clientY,
+        });
       }
     }
 
