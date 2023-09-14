@@ -11,6 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Oxygen+Mono&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/06fb1deb19.js"
       crossorigin="anonymous"
@@ -112,6 +122,12 @@
       </nav>
     </header>
     <section class="about-page-container">
+      <video id="video-bg" autoplay loop muted>
+        <source
+          src="/images/about-me-img/background-video/background-video-aboutpage.mp4"
+          type="video/mp4"
+        />
+      </video>
       <!-- <div class="skill-content-container">
         <div class="content-left">
           <div class="skill-container1">
@@ -194,7 +210,18 @@
           </div>
         </div>
       </div> -->
-      <div class="card-container">
+      <div class="about-text-container">
+        <div class="about-intro-text">
+          <h4 class="intro-text-1">I'm</h4>
+          <h2 class="intro-text-2">Philipp</h2>
+          <h5 class="intro-text-3">and I'm a</h5>
+          <h6 class="intro-text-4">Frontend Developer/Designer/Freelancer</h6>
+        </div>
+      </div>
+      <button class="my-skills-btn" href="#" onclick="toggle()">
+        My Skills
+      </button>
+      <div class="card-container" id="card-container">
         <div class="skill-card">
           <div class="skills hidden">
             <h2 class="skill-title">MY</h2>
@@ -252,6 +279,7 @@
 
     <script defer src="/script/slide-in-fucntion-cube.js"></script>
     <script src="/script/script.js"></script>
+    <script src="/script/about-page-btn.js"></script>
     <script type="text/javascript" src="../script/vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelector(".skill-card"), {
