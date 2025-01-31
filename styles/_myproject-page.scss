@@ -1,6 +1,8 @@
+
+
 .myproject-page-container {
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,14 +128,25 @@ a {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    .myproject-page-container {
+        height: 100vh;
+    }
   .myProjectContent {
+    margin-top: 35%;
+    margin-bottom: 15%;
     width: 60vw;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .project1-img {
+    width: 70%;
+  }
+  .project2-img {
+    width: 80%;
   }
 }
 
