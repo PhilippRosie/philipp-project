@@ -28,36 +28,57 @@ a {
   padding: 20px;
 }
 
+.project1-container {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    width: 200px;
+    transition: 0.5s ease;
+    color: #ad0085;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    bottom: 5px;
+    padding: 5px;
+  }
+}
+
 .project1 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 200px;
   max-width: 100%;
   min-height: 200px;
   flex-direction: column;
-  background-color: #ad0085;
+  background-color: #ad0085bb;
   border-radius: 10px;
   border: 5px solid #ff00c3fd;
   transition: 0.5s ease;
   box-shadow: 0 0 10px #3e3e3e, 0 0 15px #c70098, 0 0 30px#d700a5,
     inset 0 0 20px #3e3e3e;
 
-  h2 {
-    position: absolute;
-    transition: 0.5s ease;
-    color: #222222a1;
-    letter-spacing: 3px;
-    font-size: 28px;
-    font-family: "Barlow Condensed", sans-serif;
-  }
+}
+
+.project2-container {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   p {
-    position: absolute;
     transition: 0.5s ease;
-    color: #222222a1;
+    color: #ad0085;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Barlow Condensed", sans-serif;
     text-align: center;
     bottom: 5px;
@@ -70,36 +91,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 200px;
   max-width: 100%;
   min-height: 200px;
   flex-direction: column;
-  background-color: #ad0085;
+  background-color: #ad0085bb;
   border-radius: 10px;
   border: 5px solid #ff00c3fd;
   transition: 0.5s ease;
   box-shadow: 0 0 10px #3e3e3e, 0 0 15px #c70098, 0 0 30px#d700a5,
     inset 0 0 20px #3e3e3e;
 
-  h2 {
-    position: absolute;
-    transition: 0.5s ease;
-    color: #222222a1;
-    letter-spacing: 3px;
-    font-size: 22px;
-    font-family: "Barlow Condensed", sans-serif;
-  }
-  p {
-    position: absolute;
-    transition: 0.5s ease;
-    color: #222222a1;
-    letter-spacing: 3px;
-    font-size: 14px;
-    font-family: "Barlow Condensed", sans-serif;
-    text-align: center;
-    bottom: 5px;
-    padding: 5px;
-  }
 }
 
 .project1:hover {
@@ -122,21 +125,6 @@ a {
   }
 }
 
-.fa-store {
-  font-size: 70px;
-  color: #ff00c3fd;
-  text-decoration: none;
-  transition: 0.5s ease;
-  text-shadow: 0 0 3px #3e3e3e;
-}
-
-.fa-comment-dots {
-  font-size: 70px;
-  color: #ff00c3fd;
-  text-decoration: none;
-  transition: 0.5s ease;
-  text-shadow: 0 0 3px #3e3e3e;
-}
 
 @media screen and (max-width: 500px) {
   .myProjectContent {
